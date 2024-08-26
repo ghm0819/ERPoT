@@ -39,9 +39,9 @@ Please cite the following paper if you use this project in your research:
 
 ## Table of Contents
 
-* [Dependency](#0-Dependency)
-* [Quick Start](#1-Quick-Start)
-* [Setup](#2-Setup)
+* [Dependency](##0-Dependency)
+* [Quick Start](##1-Quick Start)
+* [Detailed  Description](##2-Detailed  Description)
 
 ## 0. Dependency
 - [ROS](http://wiki.ros.org/ROS/Installation) (tested with Noetic 1.16.0)
@@ -82,8 +82,6 @@ The project has been tested on 20.04 (ROS Noetic), and it can also be tested in 
 
    Finally, you can view the current pose tracking effect through RVIZ (`tracking.rviz`).
 
-
-
 ## 2. Detailed  Description
 
 1. **Ground segmentation**
@@ -100,9 +98,9 @@ The project has been tested on 20.04 (ROS Noetic), and it can also be tested in 
    rosbag play --clock bag_name.bag
    ```
 
-​	   Finally, you can view the current ground segmentation effect through RVIZ (`demo.rviz`).
+   Finally, you can view the current ground segmentation effect through RVIZ (`demo.rviz`).
 
-2.  **Build a prior polygon map**
+2. **Build a prior polygon map**
 
    At first, you should provide the `tf` information between `base_link` and `odom`, as well as between `base_link` and `laser`. Note that the localization information is obtained from the provided ground_truth or 3D LiDAR SLAM (such as LIO-SAM, LeGO-SLAM), rather than depends on the scan matching results (the original version of karto_slam).
 
@@ -125,11 +123,11 @@ The project has been tested on 20.04 (ROS Noetic), and it can also be tested in 
    ```
 
    Finally, the prior polygon map is obtained through the following command.
-   
+
    ```
    rosrun ERPoT generate_polygon /map_path/map_name
    ```
-   
+
    There are some important parameters used to generate the grid map and the corresponding polygon map, which need to be set according to specific experimental scenarios to achieve optimal results. You can consider adjusting them near the default values.
 
 ## Acknowledgment
