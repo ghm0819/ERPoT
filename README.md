@@ -40,8 +40,8 @@ Please cite the following paper if you use this project in your research:
 ## Table of Contents
 
 * [Dependency](##0-Dependency)
-* [Quick Start](##1-Quick Start)
-* [Detailed Description](##2-Detailed Description)
+* [Quick Start](##1-Quick-Start)
+* [Detailed Description](##2-Detailed-Description)
 
 ## 0. Dependency
 - [ROS](http://wiki.ros.org/ROS/Installation) (tested with Noetic 1.16.0)
