@@ -41,7 +41,7 @@ Please cite the following paper if you use this project in your research:
 
 * [Dependency](##0-Dependency)
 * [Quick Start](##1-Quick Start)
-* [Detailed  Description](##2-Detailed  Description)
+* [Detailed Description](##2-Detailed Description)
 
 ## 0. Dependency
 - [ROS](http://wiki.ros.org/ROS/Installation) (tested with Noetic 1.16.0)
@@ -82,7 +82,7 @@ The project has been tested on 20.04 (ROS Noetic), and it can also be tested in 
 
    Finally, you can view the current pose tracking effect through RVIZ (`tracking.rviz`).
 
-## 2. Detailed  Description
+## 2. Detailed Description
 
 1. **Ground segmentation**
 
