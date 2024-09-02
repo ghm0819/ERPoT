@@ -69,7 +69,7 @@ The project has been tested on 20.04 (ROS Noetic), and it can also be tested in 
    
 
 
-2. According to the map info (.bin) under the folder `./map/` and our provided [test datasets](), run the following commands. Note that, the initial pose of the test dataset should be modified in `./config/tracking_params.yaml`, and the parameter `map path` in `./launch/pose_tracking.launch` of the test dataset also needs to be modified.
+2. According to the map info (.bin) under the folder `./map/` and our provided [test datasets](https://drive.google.com/drive/folders/129CwgdfpV40PO4lC1a3rOf7FqzG5J7iF), run the following commands. Note that, the initial pose of the test dataset should be modified in `./config/tracking_params.yaml`, and the parameter `map path` in `./launch/pose_tracking.launch` of the test dataset also needs to be modified.
 
       ```
    $ roslaunch ERPoT pose_tracking.launch
