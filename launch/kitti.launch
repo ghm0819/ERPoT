@@ -1,0 +1,13 @@
+<launch>
+    <node name="kitti_loader" pkg="ERPoT" type="kitti_loader" output="screen">
+        <param name="dataset_cali_folder" type="string" value="/home/ghm/data/public_datasets/kitti/data_odometry_calib/dataset/sequences/"/>
+        <param name="dataset_pose_folder" type="string" value="/home/ghm/data/public_datasets/kitti/data_odometry_poses/dataset/poses/"/>
+        <param name="dataset_folder" type="string" value="/home/ghm/data/public_datasets/kitti/data_odometry_velodyne/dataset/sequences/"/>
+        <param name="sequence_number" type="string" value="06" />
+        <param name="to_bag" type="bool" value="false" />
+        <param name="output_bag_file" type="string" value="/tmp/kitti.bag" /> <!-- replace with your output folder -->
+        <param name="publish_delay" type="int" value="1" />
+        <param name="start_index" type="int" value="834" />
+        <param name="end_index" type="int" value="1100" />
+    </node>
+</launch>

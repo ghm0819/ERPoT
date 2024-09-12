@@ -1,0 +1,17 @@
+<launch>
+  <param name="/use_sim_time" value="true"/>
+
+  <node name="ground_segmentation" pkg="ERPoT" type="ground_segmentation" output="screen">
+    <rosparam command="load" file="$(find ERPoT)/config/obstacle_params.yaml" />
+    <param name="cloud_topic" type="string" value="/hesai40p_points_xyzirt" />
+    <!-- hesai40p_points_xyzirt  /os1_cloud_node/points /velodyne_points -->
+  </node>
+
+  <node pkg="ERPoT" type="slam_karto" name="slam_karto" output="screen">
+    <remap from="scan" to="/ground_segmentation/scan" />
+    <rosparam command="load" file="$(find ERPoT)/config/mapper_params.yaml" />
+  </node>
+
+  <node name="$(anon rviz)" pkg="rviz" type="rviz" args="-d $(find ERPoT)/rviz/config.rviz"/>
+
+</launch>

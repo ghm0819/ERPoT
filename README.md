@@ -9,23 +9,29 @@
 
 Motivated by the requirements of compact map form and reliable localization mentioned above, we propose an effective and reliable pose tracking approach for mobile robots based on the novel prior map, called ERPoT. Note that the proposed pose tracking framework is a general solution that applies to various environments and is not limited to environments containing specific semantic elements.
 
-
-
 ![System Pipeline](./pictures/system_pipeline.png)
 
-### Pose tracking process for KITTI
 
-![System Pipeline](./pictures/KITTI00.gif)
 
-### Pose tracking process for Newer College
+
+
+### Pose tracking process for the KITTI dataset
+
+![System Pipeline](./pictures/kitti.gif)
+
+
+
+### Pose tracking process for the Newer College dataset
 
 ![System Pipeline](./pictures/Oxford.gif)
 
-### Pose tracking process for Self dataset
-
-![System Pipeline](./pictures/SELF.gif)
 
 
+### Pose tracking process for the Self dataset
+
+![System Pipeline](./pictures/self_01.gif)
+
+![System Pipeline](./pictures/self_02.gif)
 
 
 
@@ -69,7 +75,7 @@ The project has been tested on 20.04 (ROS Noetic), and it can also be tested in 
    
 
 
-2. According to the map info (.bin) under the folder `./map/` and our provided [test datasets](https://drive.google.com/drive/folders/129CwgdfpV40PO4lC1a3rOf7FqzG5J7iF), run the following commands. Note that, the initial pose of the test dataset should be modified in `./config/tracking_params.yaml`, and the parameter `map path` in `./launch/pose_tracking.launch` of the test dataset also needs to be modified.
+2. Please run the following commands according to the map info (.bin) under the folder ./map/ and our provided test datasets. Note that, the initial pose of the test dataset should be modified in `./config/tracking_params.yaml`, and the parameter `map path` in `./launch/pose_tracking.launch` of the test dataset also needs to be modified.
 
       ```
    $ roslaunch ERPoT pose_tracking.launch

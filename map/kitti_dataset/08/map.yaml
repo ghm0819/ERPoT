@@ -1,0 +1,7 @@
+image: 20_10_50_010_08.pgm
+resolution: 0.100000
+origin: [-48.686437, -46.551544, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
