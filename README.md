@@ -39,7 +39,7 @@ To run this project in minutes, check  [Dependency](#0-Dependency) and [Quick St
 
 Please cite the following paper if you use this project in your research: 
 
-> H. Gao, Q. Qiu, H. Liu, D. Liang, C. Wang, and X. Zhang, "ERPoT: Effective and Reliable Pose Tracking for Mobile Robots Based on Lightweight and Compact Polygon Maps," awaiting submission, 2024.
+> H. Gao, Q. Qiu, H. Liu, D. Liang, C. Wang, and X. Zhang, "ERPoT: Effective and Reliable Pose Tracking for Mobile Robots Based on Lightweight and Compact Polygon Maps," arXiv preprint arXiv:2409.14723, 2024. [[paper]](https://arxiv.org/abs/2409.14723) [[video]](https://youtu.be/cseml5FrW1Q)
 
 
 
