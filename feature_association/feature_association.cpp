@@ -324,6 +324,10 @@ PoseInfo FeatureAssociation::PoseTracking(const pcl::PointCloud<pcl::PointXYZI> 
 
     ExtractFeatures(indexs, smooth, curvature, label, neighbor_picked);
 
+    if (corner_cloud_->points.size() < params_.corner_feature_num ||
+        edge_cloud_->points.size() < params_.edge_feature_num) {
+        return current_pose_;
+    }
     // calculate the current poses
     for (size_t opti_counter = 0; opti_counter < 20; ++opti_counter)
     {
