@@ -324,6 +324,7 @@ PoseInfo FeatureAssociation::PoseTracking(const pcl::PointCloud<pcl::PointXYZI> 
 
     ExtractFeatures(indexs, smooth, curvature, label, neighbor_picked);
 
+    // can adjust these parameters
     if (corner_cloud_->points.size() < params_.corner_feature_num ||
         edge_cloud_->points.size() < params_.edge_feature_num) {
         return current_pose_;
