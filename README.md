@@ -1,4 +1,10 @@
 # ERPoT: Effective and Reliable Pose Tracking for Mobile Robots Using Lightweight Polygon Maps
+
+
+## News!
+
+**[2025-5]** **ERPoT** is accepted as a Regular Paper in the IEEE Transactions on Robotics (T-RO)!
+
 ### Motivation
 
 + The previous pose tracking approaches, while valuable, **often face challenges such as the large size of prior maps**, especially in **large-scale outdoor environments**, which can hinder **computational efficiency** and **map storage**.
