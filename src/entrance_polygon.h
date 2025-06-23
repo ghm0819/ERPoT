@@ -2,8 +2,8 @@
 // Created by ghm on 2024/03/03.
 //
 
-#ifndef ENTRANCE_OBSTACLE_H
-#define ENTRANCE_OBSTACLE_H
+#ifndef ENTRANCE_POLYGON_H
+#define ENTRANCE_POLYGON_H
 #include <ros/ros.h>
 #include <deque>
 #include <string>
