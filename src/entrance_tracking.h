@@ -1,5 +1,5 @@
-#ifndef ENTRANCE_OBSTACLE_H
-#define ENTRANCE_OBSTACLE_H
+#ifndef ENTRANCE_TRACKING_H
+#define ENTRANCE_TRACKING_H
 #include <ros/ros.h>
 #include <deque>
 #include <string>
