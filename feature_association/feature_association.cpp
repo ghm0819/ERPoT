@@ -374,6 +374,9 @@ PoseInfo FeatureAssociation::PoseTracking(const pcl::PointCloud<pcl::PointXYZI> 
         options.minimizer_progress_to_stdout = false;
         ceres::Solver::Summary summary;
         ceres::Solve(options, &problem, &summary);
+        if (summary.initial_cost - summary.final_cost < 0.001) {
+            break;
+        }
         // printf("solver time %f ms \n", t_solver.toc());
     }
 
